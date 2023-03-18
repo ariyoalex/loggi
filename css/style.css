@@ -1,0 +1,234 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+ 
+body {
+    background-color: #f2f2f2; /* Replace with the first color of your background image */
+    font-family: Euclid Flex, sans-serif;
+    background-image: url('../img/background.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+/*animation: scroll-background 98s linear infinite; */
+
+}
+
+@keyframes scroll-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 10000px 0;
+    }
+}
+
+
+
+/* Center container on page */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* Style form input fields and labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="file"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+input[type="submit"],
+button[type="submit"] {
+  background-color: #0C2840;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ .badge.badge-danger {
+  font-size: small;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.4rem;
+}
+
+
+
+/* Style links */
+a {
+  color: #0C2840;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style header text */
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style message text */
+p {
+  margin-bottom: 20px;
+}
+/* table style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #444;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover td {
+  background-color: #f5f5f5;
+}
+
+/* pagination style */
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #f2f2f2;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+.edit-icon {
+  color: red;
+}
+.profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.profile-img img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+.whatsapp-link {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-icon {
+  font-size: 35px;
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 20px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
